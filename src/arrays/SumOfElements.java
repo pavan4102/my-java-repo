@@ -19,7 +19,6 @@ public class SumOfElements {
         arr[i]=scan.nextInt();
     }
 
-    //SumOfElements se = new SumOfElements();
     int res = findSum(arr);
     System.out.println(res);
     }
