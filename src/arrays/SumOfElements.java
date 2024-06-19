@@ -22,6 +22,5 @@ public class SumOfElements {
     int res = findSum(arr);
     System.out.println(res);
     }
-
     }
 
