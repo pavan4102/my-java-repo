@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.Scanner;
 
-public class SubArray {
+public class PrintAllSubArray {
     public static void printSubArrays(int[] arr, int size) {
         for (int i = 0; i <= arr.length - size; i++) {
             for (int j = i; j < i + size; j++) {
@@ -19,8 +19,9 @@ public class SubArray {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scan.nextInt();
         }
-        int size = scan.nextInt();
-        printSubArrays(arr, size);
+        for (int size = 1; size <= arr.length; size++) {
+            printSubArrays(arr, size);
+        }
         scan.close();
     }
 

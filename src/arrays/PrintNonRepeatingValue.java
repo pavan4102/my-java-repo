@@ -1,4 +1,5 @@
 package arrays;
+
 import java.util.Scanner;
 
 public class PrintNonRepeatingValue {
@@ -10,6 +11,7 @@ public class PrintNonRepeatingValue {
         }
         System.out.print(arr[arr.length - 1] + " ");
     }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the number of elements in the array");

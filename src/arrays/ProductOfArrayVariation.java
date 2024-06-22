@@ -1,4 +1,5 @@
 package arrays;
+
 import java.util.Scanner;
 
 public class ProductOfArrayVariation {
@@ -21,7 +22,6 @@ public class ProductOfArrayVariation {
         }
         System.out.println();
     }
-
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
