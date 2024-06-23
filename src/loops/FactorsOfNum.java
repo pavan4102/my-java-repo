@@ -3,18 +3,24 @@ package loops;
 import java.util.Scanner;
 
 public class FactorsOfNum {
-    public static void printFactors(int n){
-        for(int i=1;i<=n;i++){
-            if(n%i==0){
-                System.out.println(i);
+    public static void factorsOfN(int n) {
+        int count = 0;
+        System.out.println("The factors of n are : ");
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                System.out.print(i + " ");
+                count++;
             }
         }
-
+        System.out.println();
+        System.out.println("The number of factors of n are : " + count);
     }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("enter the value of n");
-        int n= scan.nextInt();
-        printFactors(n);
+        System.out.println("Enter the value of n :");
+        int n = scan.nextInt();
+        factorsOfN(n);
+        scan.close();
     }
 }
