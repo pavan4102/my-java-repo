@@ -47,7 +47,7 @@ public class MergeThreeArrays {
             arr3[i] = scan.nextInt();
         }
         mergeArrays(arr1, arr2, arr3);
-        
+        scan.close();
     }
 
 }
