@@ -1,5 +1,7 @@
 package arrays;
 
+// Given an array of integers, write a program to print the length consecutive subarrays
+
 import java.util.Scanner;
 
 public class FindLongestConsecutiveSubArray {
@@ -19,7 +21,7 @@ public class FindLongestConsecutiveSubArray {
         if (count > max) {
             max = count;
         }
-        System.out.println(max);
+        System.out.println(arr);
     }
 
     /*
