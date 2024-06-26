@@ -2,20 +2,24 @@ package arrays;
 
 import java.util.Scanner;
 
-public class LengthOfConsecutiveSubArray {
-
-    public static void findConsecutiveSubArray(int[] arr) {
+public class FindLongestConsecutiveSubArray {
+    public static void LongestConsecutiveSubArray(int[] arr) {
         System.out.println("The consecutive subarray are :");
-        int count = 1;
+        int count = 1, max = 0;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i + 1] - arr[i] == 1) {
                 count++;
             } else {
-                System.out.println(count);
+                if (count > max) {
+                    max = count;
+                }
                 count = 1;
             }
         }
-        System.out.println(count);
+        if (count > max) {
+            max = count;
+        }
+        System.out.println(max);
     }
 
     /*
@@ -27,12 +31,8 @@ public class LengthOfConsecutiveSubArray {
      * Enter the elements of array :
      * 5 2 3 4 9 12 13 14 15 9
      * Output:
-     * The consecutive subarray are :
-     * 1
-     * 3
-     * 1
+     * The Longest consecutive subarray are :
      * 4
-     * 1
      */
     void main() {
         Scanner scan = new Scanner(System.in);
@@ -43,7 +43,7 @@ public class LengthOfConsecutiveSubArray {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scan.nextInt();
         }
-        findConsecutiveSubArray(arr);
+        LongestConsecutiveSubArray(arr);
         scan.close();
     }
 }
