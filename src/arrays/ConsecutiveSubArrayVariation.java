@@ -6,7 +6,7 @@ public class ConsecutiveSubArrayVariation {
     public static void findConsecutiveSubArray(int[] arr) {
         System.out.println("The consecutive subarray are :");
         for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i]<arr[i+1]) {
+            if (arr[i]<=arr[i+1]) {
                 System.out.print(arr[i] + " ");
             } else {
                 System.out.print(arr[i]);
