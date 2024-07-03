@@ -13,6 +13,9 @@ public class SwapCase {
             else if(ch >= 'A' && ch <= 'Z'){
                 t = t + (char)(ch+32);
             }
+            else{
+                t=t+ch;
+            }
         }
         System.out.println("The Swap Case string is :");
         System.out.println(t);
