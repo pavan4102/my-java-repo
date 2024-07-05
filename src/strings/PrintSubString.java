@@ -42,3 +42,4 @@ public class PrintSubString {
         subString(s, size);
         scan.close();
     }
+}
