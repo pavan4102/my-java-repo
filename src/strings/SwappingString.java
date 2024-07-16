@@ -1,6 +1,6 @@
 package strings;
 
-// Write a program to print each word of a string in reversed manner 
+// Write a program to swap the string
 import java.util.Scanner;
 
 public class SwappingString {
@@ -47,7 +47,7 @@ public class SwappingString {
      * Enter the string :
      * india is my country
      * Output:
-     * aidni si ym yrtnuoc
+     * isindia countrymy
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
